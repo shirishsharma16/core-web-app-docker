@@ -33,3 +33,5 @@ jobs:
       run: dotnet test --no-build --verbosity normal
     - name: PrintJversion
       run: java --version
+    - name: PrintJversion1
+      run: java --version
