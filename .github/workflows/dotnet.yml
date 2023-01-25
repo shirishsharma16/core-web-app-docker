@@ -25,10 +25,11 @@ jobs:
       with:
         distribution: 'temurin'
         java-version: 17
-        run : java --version
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - name: PrintJversion
+      run: java --version
